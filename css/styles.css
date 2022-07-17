@@ -1,0 +1,70 @@
+/* основной цвет текста #757575  */
+/* вторичный цвет текста #212121 */
+/* цвет лого в шапке #2196F3 и #000000 */
+/* цвет лого в подвале #2196F3 #FFFFFF */
+/* цвет акцента #2196F3 */
+/* цвет кнопки в Герое #2196F3 */
+/* цвет текста при нанведении в кнопке #FFFFFF */
+/* цвет фона герой и подвал #2F303A*/
+
+.page {
+  background-color: #f5f5f5;
+  color: #757575;
+}
+
+.header-logo {
+  color: #000000;
+}
+
+.web-logo {
+  color: #2196f3;
+}
+
+.footer-logo {
+  color: #ffffff;
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+
+.contact .link {
+  color: #757575;
+}
+
+.contact .link:hover,
+.contact .link:focus {
+  color: #2196f3;
+}
+
+/* hero */
+
+.hero-title {
+  color: #ffffff;
+}
+.hero,
+.footer {
+  background-color: #2f303a;
+}
+
+.studio-button {
+  background-color: #2196f3;
+}
+
+/* sections */
+.section-title,
+.post-title {
+  color: #212121;
+}
+
+.studio-text {
+  color: #ffffff;
+}
