@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студия</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+    </style>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!--Шапка-->
-    <header>
+    <header class="header-text">
       <nav>
         <a class="header-logo" lang="en" href="index.html"
           ><span class="web-logo">Web</span>Studio</a
@@ -43,28 +46,28 @@
         <ul class="section-list list">
           <li>
             <h3 class="post-title">Внимание к деталям</h3>
-            <p>
+            <p class="section-paragraph">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
           <li>
             <h3 class="post-title">Пунктуальность</h3>
-            <p>
+            <p class="section-paragraph">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
           <li>
             <h3 class="post-title">Планирование</h3>
-            <p>
+            <p class="section-paragraph">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
           <li>
             <h3 class="post-title">Современные технологии</h3>
-            <p>
+            <p class="section-paragraph">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -101,7 +104,7 @@
               width="270"
             />
             <h3 class="section-title">Игорь Демьяненко</h3>
-            <p lang="en">Product Designer</p>
+            <p class="profession" lang="en">Product Designer</p>
           </li>
           <li>
             <img
@@ -110,7 +113,7 @@
               width="270"
             />
             <h3 class="section-title">Ольга Репина</h3>
-            <p lang="en">Frontend Developer</p>
+            <p class="profession" lang="en">Frontend Developer</p>
           </li>
           <li>
             <img
@@ -119,7 +122,7 @@
               width="270"
             />
             <h3 class="section-title">Николай Тарасов</h3>
-            <p lang="en">Marketing</p>
+            <p class="profession" lang="en">Marketing</p>
           </li>
           <li>
             <img
@@ -128,7 +131,7 @@
               width="270"
             />
             <h3 class="section-title">Михаил Ермаков</h3>
-            <p lang="en">UI Designer</p>
+            <p class="profession" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
@@ -142,6 +145,7 @@
         <ul class="footer-address list">
           <li>
             <a
+              class="address-text"
               href="https://goo.gl/maps/cN53utoA52TAUsTN9"
               target="_blank"
               rel="noopening noreferrer nofollow"
@@ -149,10 +153,14 @@
             >
           </li>
           <li>
-            <a lang="en" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="footer-contact" lang="en" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
           <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="footer-contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
