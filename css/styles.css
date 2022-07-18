@@ -62,11 +62,15 @@ font-family: "Roboto", sans-serif; */
 }
 
 .header-nav .link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .header-nav .link:hover,
 .header-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.header-nav .link.current {
   color: var(--accent-color);
 }
 
