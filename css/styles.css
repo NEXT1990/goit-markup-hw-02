@@ -12,8 +12,8 @@
 /* цвет почты и телефона в подвале rgba(255, 255, 255, 0.6); */
 /* цвет обводки картинок на странице "портфолио" #EEEEEE  */
 /*   Стили текста для подключения в боди
-font-family: "Raleway", sans-serif;
-font-family: "Roboto", sans-serif; */
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 :root {
   --primary-text-color: #757575;
