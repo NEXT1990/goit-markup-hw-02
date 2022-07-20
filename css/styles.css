@@ -1,16 +1,15 @@
-/* основной цвет текста #757575  */
-/* вторичный цвет текста #212121 */
-/* цвет лого в шапке #2196F3 и #000000 */
-/* цвет лого в подвале #2196F3 #FFFFFF */
-/* цвет акцента #2196F3 */
-/* цвет кнопки в Герое #2196F3 */
-/* цвет текста при нанведении в кнопке #FFFFFF */
-/* цвет фона герой и подвал #2F303A*/
-/* цвет фона общий #FFFFFF */
-/* фоновый цвет "Команда студии" #F5F4FA */
-/* цвет полоски под шапкой #ECECEC */
+/* Палитра цветов */
+/* #757575 основной цвет текста #757575  */
+/* #212121 вторичный цвет текста #212121 */
+/* #2196F3 цвет лого (Web) в шапке и подвале; цвет акцента; фоновый цвет secondaty button в герое   #2196F3 */
+/* #000000 цвет лого (Studio) в шапке #000000  */
+/* #2F303A цвет фона герой и подвал #2F303A */
+/* #FFFFFF цвет фона общий; цвет лого (Studio) в подвале; цвет текста в secondary button (кнопка в герое); цвет текста при hover и focus в primary button (в портфолио)   #FFFFFF */
+/* #F5F4FA фоновый цвет "Команда студии" #F5F4FA */
+/* #ECECEC цвет полоски под шапкой #ECECEC */
+/* #EEEEEE цвет обводки картинок на странице "портфолио" #EEEEEE  */
 /* цвет почты и телефона в подвале rgba(255, 255, 255, 0.6); */
-/* цвет обводки картинок на странице "портфолио" #EEEEEE  */
+
 /*   Стили текста для подключения в боди
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
@@ -28,24 +27,39 @@ font-family: 'Roboto', sans-serif; */
 /* Body */
 
 .page {
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
   background-color: var(--body-background-color);
   color: var(--primary-text-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 .section-title {
   color: var(--title-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* main */
 
 /* шапка */
-.logo {
+
+.header-logo,
+.footer-logo {
   color: #000000;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
 }
-.logo:hover,
-.logo:focus {
+.header-logo:hover,
+.header-logo:focus {
   color: var(--accent-color);
 }
 
@@ -63,6 +77,11 @@ font-family: 'Roboto', sans-serif; */
 
 .header-nav .link {
   color: var(--title-text-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-nav .link:hover,
@@ -74,6 +93,14 @@ font-family: 'Roboto', sans-serif; */
   color: var(--accent-color);
 }
 
+.header-contact .link {
+  color: var(--primary-text-color);
+}
+.header-contact .link:hover,
+.header-contact .link:focus {
+  color: var(--accent-color);
+}
+
 /* герой */
 
 .hero {
@@ -82,12 +109,34 @@ font-family: 'Roboto', sans-serif; */
 
 .hero-title {
   color: var(--hero-title-footer-logo-address-collor);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* особенности студии */
 
 .section-list .title {
   color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.section-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  /* or 171% */
 }
 
 /* чем занимается ВебСтудия */
@@ -98,8 +147,18 @@ font-family: 'Roboto', sans-serif; */
   background-color: var(--background-team-and-button-primary-color);
 }
 
-.section-team .title {
+.section-team .title,
+.profession {
   color: var(--title-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+}
+
+.profession {
+  font-weight: 400;
 }
 
 /* подвал */
@@ -110,6 +169,7 @@ font-family: 'Roboto', sans-serif; */
 
 .footer-logo {
   color: var(--hero-title-footer-logo-address-collor);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .address {
@@ -142,9 +202,8 @@ font-family: 'Roboto', sans-serif; */
   color: var(--title-text-color);
   background-color: var(--background-team-and-button-primary-color);
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.63;
   /* identical to box height, or 162% */
-  letter-spacing: 0.03em;
 }
 
 .button.primary:hover,
@@ -157,9 +216,30 @@ button.secondary {
   color: var(--hero-title-footer-logo-address-collor);
   background-color: var(--accent-color);
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.88;
   /* identical to box height, or 188% */
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
+}
+
+/* портфолио */
+
+.portfolio {
+  font-style: normal;
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+
+.portfolio-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
 }
