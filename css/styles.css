@@ -19,20 +19,27 @@ font-family: 'Roboto', sans-serif; */
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --hero-title-color: #ffffff;
   --hero-footer-background-color: #2f303a;
   --body-and-our-team-background-color: #ffffff;
-  --footer-logo-address-collor: #ffffff;
+  --footer-logo-collor: #ffffff;
   --button-primary-color: #f5f4fa;
+  --background-our-team-color: #f5f4fa;
+  --logo-studio-in-header-collor: #000000;
+  --mail-and-tell-collor: rgba(255, 255, 255, 0.6);
+  --address-collor: #ffffff;
+  --border-header-collor: #ececec;
+  --border-portfolio-color: #eeeeee;
+  --hover-focus-button-secondary-collor: #188ce8;
 }
 
 /* Body */
 
-.page {
+body {
   font-family: "Roboto", sans-serif;
   background-color: var(--body-and-our-team-background-color);
   color: var(--primary-text-color);
   font-size: 14px;
-  font-weight: 400;
   letter-spacing: 0.03em;
 }
 
@@ -61,7 +68,7 @@ section {
 
 .header-logo,
 .footer-logo {
-  color: #000000;
+  color: var(--logo-studio-in-header-collor);
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -102,6 +109,7 @@ section {
 
 .header-contact .link {
   color: var(--primary-text-color);
+  font-weight: 500;
 }
 .header-contact .link:hover,
 .header-contact .link:focus {
@@ -109,8 +117,8 @@ section {
   font-weight: 500;
 }
 
-.page-header {
-  border-bottom: 1px solid #ececec;
+.header {
+  border-bottom: 1px solid var(--border-header-collor);
   margin-bottom: -94px;
 }
 
@@ -121,7 +129,7 @@ section {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--hero-title-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -131,6 +139,19 @@ section {
 }
 
 /* особенности студии */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .section-peculiarities {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -154,7 +175,7 @@ section {
 /* команда студии */
 
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--background-our-team-color);
 }
 
 .section-team > li {
@@ -180,7 +201,7 @@ section {
 }
 
 .footer-logo {
-  color: var(--footer-logo-address-collor);
+  color: var(--footer-logo-collor);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -189,11 +210,11 @@ section {
 }
 
 .address .address-text {
-  color: var(--footer-logo-address-collor);
+  color: var(--address-collor);
 }
 
 .footer-address a {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--mail-and-tell-collor);
 }
 
 .footer .link:hover,
@@ -207,7 +228,6 @@ section {
   cursor: pointer;
   font-family: "Roboto";
   font-size: 16px;
-  text-align: center;
 }
 
 .button.primary {
@@ -237,7 +257,7 @@ button.secondary {
 
 .button.secondary:hover,
 .button.secondary:focus {
-  background-color: #188ce8;
+  background-color: var(--hover-focus-button-secondary-collor);
 }
 
 /* портфолио */
